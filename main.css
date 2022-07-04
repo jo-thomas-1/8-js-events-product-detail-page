@@ -1,0 +1,9 @@
+/* main css */
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
