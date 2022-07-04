@@ -21,3 +21,36 @@ var productData = {
     "brand": "United Colors of Benetton",
     "price": 2599
 }
+
+// apply data to page
+
+// main image
+document.getElementById("main_image").src = productData["preview"];
+
+// item name
+document.getElementById("name").innerHTML = productData["name"];
+
+// item brand
+document.getElementById("brand").innerHTML = productData["brand"];
+
+// item price
+document.getElementById("price_value").innerHTML = productData["price"];
+
+// item description
+document.getElementById("description").innerHTML = productData["description"];
+
+// item images
+for(let i = 0; i < productData["photos"].length; i++)
+{
+    // <img id="image_0" class="active" onclick="update_main_image(this);" src="">
+
+    let temp_image_tag = document.createElement("img");
+    
+    temp_image_tag.id = "image_" + i;
+    temp_image_tag.setAttribute("onclick", "update_main_image(this);");
+    temp_image_tag.src = productData["photos"][i];
+
+    if(i == 0) temp_image_tag.classList.add("active");
+
+    document.getElementById("preview_images").appendChild(temp_image_tag);
+}
