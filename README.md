@@ -4,6 +4,8 @@ Design the below product details page. You can find the reference website here t
 
 Reference Website: https://shoplane.netlify.app/product.html?product_id=1
 
+Reference Image: ![reference](https://user-images.githubusercontent.com/7560063/177110833-f63f2940-d3e6-4c45-87c4-8a7486a294aa.JPG)
+
 Important Instructions:
 
 - You DO NOT have to implement the top bar.
